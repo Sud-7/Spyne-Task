@@ -7,7 +7,7 @@ const CaptionInput = ({ addCaption }) => {
   ]);
   const [errors, setErrors] = useState([]);
 
-  // this is for the commit
+  // this is for the push
   useEffect(() => {
     const handler = setTimeout(() => {
       addCaption(captions);
