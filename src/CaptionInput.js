@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactInputMask from "react-input-mask";
 
-const EMPTYCAPTION = { startTime: "", endTime: "", text: "" };
-
 const CaptionInput = ({ addCaption }) => {
   const [captions, setCaptions] = useState([
     { startTime: "00:00:00.000", endTime: "00:00:02.000", text: "" },
@@ -14,7 +12,6 @@ const CaptionInput = ({ addCaption }) => {
     const handler = setTimeout(() => {
       addCaption(captions);
     }, 500);
-
     return () => {
       clearTimeout(handler);
     };
