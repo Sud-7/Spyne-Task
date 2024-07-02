@@ -1,0 +1,115 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+}
+.caption-parent {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.caption-input-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* margin-bottom: 20px;
+  padding: 20px; */
+}
+
+.video-container {
+  width: 50%;
+}
+
+.caption-input-parent {
+  width: 36%;
+}
+
+.caption-child {
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+
+.input-container {
+  width: 20%;
+}
+
+.text-container {
+  width: 70%;
+}
+
+.section-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.input-field {
+  margin-bottom: 6px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+
+.edit-container {
+  display: flex;
+}
+
+.error-text {
+  color: red;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+textarea {
+  height: 65px;
+}
+
+button.add-caption-button {
+  margin-top: 15px;
+  align-self: flex-end; /* Aligns button to the bottom right */
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.add-caption-button:hover {
+  background-color: #0056b3;
+}
+
+button.remove-caption-button {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  right: 0%;
+  bottom: 50%;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.remove-caption-button:hover {
+  background-color: #dc3545;
+}
